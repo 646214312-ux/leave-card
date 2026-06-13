@@ -6,12 +6,36 @@
 
   <title>分享请假信息</title>
   <meta name="description" content="分享请假信息">
+  <meta name="keywords" content="分享请假信息">
+  <meta name="application-name" content="演示 app">
+  <meta name="apple-mobile-web-app-title" content="演示 app">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="icon" href="https://646214312-ux.github.io/leave-card/logo.png">
+  <link rel="apple-touch-icon" href="https://646214312-ux.github.io/leave-card/logo.png">
+  <link rel="image_src" href="https://646214312-ux.github.io/leave-card/logo.png">
 
   <meta property="og:title" content="分享请假信息">
   <meta property="og:description" content="分享请假信息">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="演示 app">
   <meta property="og:url" content="https://646214312-ux.github.io/leave-card/">
   <meta property="og:image" content="https://646214312-ux.github.io/leave-card/logo.png">
+  <meta property="og:image:secure_url" content="https://646214312-ux.github.io/leave-card/logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="300">
+  <meta property="og:image:height" content="300">
+
+  <meta property="al:ios:app_name" content="演示 app">
+  <meta property="al:android:app_name" content="演示 app">
+  <meta property="al:web:url" content="https://646214312-ux.github.io/leave-card/">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="分享请假信息">
+  <meta name="twitter:description" content="分享请假信息">
+  <meta name="twitter:image" content="https://646214312-ux.github.io/leave-card/logo.png">
+  <meta name="twitter:app:name:iphone" content="演示 app">
+  <meta name="twitter:app:name:googleplay" content="演示 app">
 
   <meta itemprop="name" content="分享请假信息">
   <meta itemprop="description" content="分享请假信息">
@@ -23,55 +47,60 @@
       -webkit-tap-highlight-color: transparent;
     }
 
-    body {
+    html, body {
       margin: 0;
-      min-height: 100vh;
+      padding: 0;
+      width: 100%;
+      height: 100%;
       background: #ededed;
       font-family: Arial, "Microsoft YaHei", sans-serif;
+      overflow: hidden;
+    }
+
+    body {
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
     }
 
     .share-card {
-      width: 78%;
-      max-width: 360px;
-      background: #fff;
-      border-radius: 7px;
-      padding: 18px 16px 14px;
+      width: 360px;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 18px 18px 14px;
     }
 
-    .main {
+    .top {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
     }
 
     .text {
       flex: 1;
       min-width: 0;
-      padding-right: 16px;
+      padding-right: 18px;
     }
 
     .title {
-      font-size: 21px;
-      line-height: 29px;
-      color: #111;
+      font-size: 22px;
+      line-height: 30px;
+      color: #111111;
       font-weight: 700;
       margin-bottom: 6px;
     }
 
     .desc {
-      font-size: 17px;
-      line-height: 24px;
-      color: #777;
+      font-size: 18px;
+      line-height: 26px;
+      color: #777777;
       font-weight: 500;
     }
 
-    .logo {
-      width: 68px;
-      height: 68px;
-      border-radius: 4px;
+    .main-logo {
+      width: 76px;
+      height: 76px;
+      border-radius: 5px;
       object-fit: cover;
       flex-shrink: 0;
     }
@@ -80,44 +109,70 @@
       margin-top: 18px;
       display: flex;
       align-items: center;
-      color: #777;
       font-size: 17px;
-      font-weight: 600;
       line-height: 22px;
+      color: #777777;
+      font-weight: 600;
     }
 
-    .source-icon {
-      width: 18px;
-      height: 18px;
+    .source-logo {
+      width: 19px;
+      height: 19px;
       border-radius: 3px;
-      margin-right: 6px;
       object-fit: cover;
+      margin-right: 7px;
     }
 
     .loading {
       position: fixed;
-      bottom: 38px;
       left: 0;
       right: 0;
+      bottom: 38px;
       text-align: center;
+      color: #999999;
       font-size: 13px;
-      color: #999;
+    }
+
+    @media (max-width: 480px) {
+      .share-card {
+        width: 78vw;
+        padding: 18px 16px 14px;
+      }
+
+      .title {
+        font-size: 21px;
+        line-height: 29px;
+      }
+
+      .desc {
+        font-size: 17px;
+        line-height: 24px;
+      }
+
+      .main-logo {
+        width: 70px;
+        height: 70px;
+      }
+
+      .source {
+        font-size: 17px;
+      }
     }
   </style>
 </head>
 
 <body>
   <div class="share-card">
-    <div class="main">
+    <div class="top">
       <div class="text">
         <div class="title">分享请假信息</div>
         <div class="desc">分享请假信息</div>
       </div>
-      <img class="logo" src="https://646214312-ux.github.io/leave-card/logo.png" alt="">
+      < img class="main-logo" src="https://646214312-ux.github.io/leave-card/logo.png" alt="">
     </div>
 
     <div class="source">
-      <img class="source-icon" src="https://646214312-ux.github.io/leave-card/logo.png" alt="">
+      < img class="source-logo" src="https://646214312-ux.github.io/leave-card/logo.png" alt="">
       <span>演示 app</span>
     </div>
   </div>
