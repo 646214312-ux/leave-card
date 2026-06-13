@@ -4,35 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 微信/QQ/浏览器卡片标题 -->
   <title>分享请假信息</title>
   <meta name="description" content="分享请假信息">
 
-  <!-- 卡片预览信息 -->
   <meta property="og:title" content="分享请假信息">
   <meta property="og:description" content="分享请假信息">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://646214312-ux.github.io/leave-card/">
   <meta property="og:image" content="https://646214312-ux.github.io/leave-card/logo.png">
-  <meta property="og:image:width" content="300">
-  <meta property="og:image:height" content="300">
 
-  <!-- 兼容部分平台 -->
   <meta itemprop="name" content="分享请假信息">
   <meta itemprop="description" content="分享请假信息">
   <meta itemprop="image" content="https://646214312-ux.github.io/leave-card/logo.png">
 
+  <style>
+    body {
+      margin: 0;
+      background: #ffffff;
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+    }
+  </style>
+
   <script>
-    // 真实请假详情链接
     const targetUrl = "https://xyz.yihuanxinxi.com/#/pages/leave-apply/olddetail?id=8139&share_token=6871e0cc77db2e01a7028bd0cb760338_3237";
 
-    // 页面打开后直接跳转
-    window.onload = function () {
-      window.location.replace(targetUrl);
-    };
+    setTimeout(function () {
+      window.location.href = targetUrl;
+    }, 1500);
   </script>
 </head>
-
 <body>
 </body>
 </html>
